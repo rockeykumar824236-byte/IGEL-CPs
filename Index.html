@@ -1,0 +1,892 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sure Success Coaching Centre | Tekari</title>
+
+    <meta name="description" content="Sure Success Coaching Centre, Baheliya Bigha, Addapar, Tekari. Class 8th to 10th coaching and I.Sc Physics & Maths.">
+    <meta name="theme-color" content="#9f2029">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fffaf0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        :root {
+            --red: #a3202b;
+            --dark-red: #75151d;
+            --yellow: #ffcf57;
+            --cream: #fff6dd;
+            --white: #ffffff;
+        }
+
+        /* Navigation */
+
+        header {
+            background: var(--red);
+            color: white;
+            padding: 15px 6%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 15px #0002;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: var(--yellow);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 22px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--yellow);
+        }
+
+        /* Hero Section */
+
+        .hero {
+            min-height: 570px;
+            padding: 90px 6%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background:
+                linear-gradient(135deg, #75151deF, #a3202beF);
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 850px;
+            animation: fadeIn 1.2s ease;
+        }
+
+        .estd {
+            display: inline-block;
+            background: var(--yellow);
+            color: var(--dark-red);
+            padding: 7px 20px;
+            border-radius: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 7vw, 75px);
+            line-height: 1.1;
+            font-weight: 900;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: var(--yellow);
+        }
+
+        .hero h2 {
+            font-size: clamp(20px, 4vw, 35px);
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-yellow {
+            background: var(--yellow);
+            color: var(--dark-red);
+        }
+
+        .btn-white {
+            background: white;
+            color: var(--red);
+        }
+
+        .btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 7px 18px #0003;
+        }
+
+        /* General Sections */
+
+        section {
+            padding: 70px 6%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-size: clamp(27px, 4vw, 40px);
+            color: var(--red);
+        }
+
+        .section-title p {
+            color: #666;
+            margin-top: 8px;
+        }
+
+        .underline {
+            width: 80px;
+            height: 4px;
+            background: var(--yellow);
+            margin: 12px auto;
+            border-radius: 5px;
+        }
+
+        /* About */
+
+        .about {
+            background: white;
+        }
+
+        .about-content {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .about-content h3 {
+            color: var(--red);
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .about-content p {
+            font-size: 17px;
+            color: #555;
+        }
+
+        .highlight {
+            color: var(--red);
+            font-weight: bold;
+        }
+
+        /* Courses */
+
+        .courses {
+            background: var(--cream);
+        }
+
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(230px, 1fr)
+            );
+            gap: 25px;
+        }
+
+        .course-card {
+            background: white;
+            padding: 30px 25px;
+            border-radius: 18px;
+            text-align: center;
+            border-bottom: 5px solid var(--red);
+            box-shadow: 0 5px 20px #0000000d;
+            transition: 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px #0002;
+        }
+
+        .course-icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .course-card h3 {
+            color: var(--red);
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .course-card p {
+            color: #666;
+        }
+
+        /* Batches */
+
+        .batches {
+            background: white;
+        }
+
+        .batch-grid {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(250px, 1fr)
+            );
+            gap: 25px;
+        }
+
+        .batch-card {
+            background: var(--cream);
+            border-radius: 15px;
+            padding: 28px;
+            text-align: center;
+            border: 1px solid #f1dfb8;
+        }
+
+        .batch-card h3 {
+            color: var(--red);
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .time {
+            background: var(--red);
+            color: white;
+            padding: 12px;
+            border-radius: 10px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .new-batch {
+            display: inline-block;
+            background: var(--yellow);
+            color: var(--dark-red);
+            font-size: 13px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-top: 8px;
+            font-weight: bold;
+        }
+
+        /* Crash Course */
+
+        .crash {
+            background: var(--red);
+            color: white;
+            text-align: center;
+        }
+
+        .crash h2 {
+            font-size: clamp(28px, 5vw, 42px);
+            margin-bottom: 15px;
+        }
+
+        .crash h2 span {
+            color: var(--yellow);
+        }
+
+        .crash p {
+            font-size: 18px;
+            max-width: 750px;
+            margin: auto auto 25px;
+        }
+
+        /* Features */
+
+        .features {
+            background: var(--cream);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(220px, 1fr)
+            );
+            gap: 20px;
+        }
+
+        .feature {
+            background: white;
+            padding: 22px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 0 4px 15px #0000000b;
+        }
+
+        .feature-icon {
+            color: var(--red);
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        /* Director */
+
+        .director {
+            background: white;
+            text-align: center;
+        }
+
+        .director-card {
+            max-width: 550px;
+            margin: auto;
+            background: var(--cream);
+            padding: 40px 25px;
+            border-radius: 20px;
+            border: 2px solid #f0dfb9;
+        }
+
+        .director-icon {
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+
+        .director-card h3 {
+            color: var(--red);
+            font-size: 30px;
+        }
+
+        .director-card p {
+            margin: 10px 0 20px;
+        }
+
+        /* Contact */
+
+        .contact {
+            background: var(--dark-red);
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 35px;
+            color: var(--yellow);
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+
+        .contact .btn {
+            margin-top: 20px;
+        }
+
+        /* Footer */
+
+        footer {
+            background: #3b1014;
+            color: #ddd;
+            padding: 25px 6%;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer strong {
+            color: var(--yellow);
+        }
+
+        /* Animation */
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mobile Responsive */
+
+        @media (max-width: 600px) {
+            header {
+                position: relative;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            nav ul {
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 12px;
+            }
+
+            .hero {
+                padding: 65px 5%;
+                min-height: 480px;
+            }
+
+            section {
+                padding: 50px 5%;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .course-card,
+            .batch-card {
+                padding: 25px 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <header>
+        <nav>
+            <div class="logo">
+                SURE <span>SUCCESS</span>
+            </div>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#batches">Batches</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+
+            <div class="estd">
+                ESTD. 2012
+            </div>
+
+            <h1>
+                SURE <span>SUCCESS</span>
+            </h1>
+
+            <h2>COACHING CENTRE</h2>
+
+            <p>
+                भीड़ नहीं, भविष्य बदलें
+                <br>
+                Concept Clear तो Result Clear
+            </p>
+
+            <p>
+                Class VIIIth to Xth (All Subjects)
+                <br>
+                I.Sc. Physics & Maths
+            </p>
+
+            <div class="buttons">
+                <a href="#courses" class="btn btn-yellow">
+                    Explore Courses
+                </a>
+
+                <a href="#contact" class="btn btn-white">
+                    Contact Us
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+
+    <section class="about" id="about">
+
+        <div class="section-title">
+            <h2>About Our Coaching</h2>
+            <div class="underline"></div>
+            <p>हमारी पहचान, आपकी सफलता</p>
+        </div>
+
+        <div class="about-content">
+
+            <h3>
+                Concept Clear तो Result Clear
+            </h3>
+
+            <p>
+                Sure Success Coaching Centre की स्थापना
+                वर्ष <span class="highlight">2012</span> में हुई।
+                हमारा उद्देश्य विद्यार्थियों को बेहतर शिक्षा
+                प्रदान करना और उनके concepts को clear करना है।
+                हम Class 8th से 10th तक सभी विषयों तथा
+                I.Sc. के Physics और Maths की पढ़ाई कराते हैं।
+            </p>
+
+            <br>
+
+            <p>
+                <strong>
+                    भीड़ नहीं, भविष्य बदलें!
+                </strong>
+            </p>
+
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+
+    <section class="courses" id="courses">
+
+        <div class="section-title">
+            <h2>Our Courses</h2>
+            <div class="underline"></div>
+            <p>अपनी कक्षा के अनुसार पढ़ाई करें</p>
+        </div>
+
+        <div class="course-grid">
+
+            <div class="course-card">
+                <div class="course-icon">📘</div>
+
+                <h3>Class 8th</h3>
+
+                <p>
+                    सभी विषयों की पढ़ाई
+                    <br>
+                    Concept Based Learning
+                </p>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">📗</div>
+
+                <h3>Class 9th</h3>
+
+                <p>
+                    सभी विषयों की पढ़ाई
+                    <br>
+                    नियमित Practice
+                </p>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">📕</div>
+
+                <h3>Class 10th</h3>
+
+                <p>
+                    सभी विषयों की पढ़ाई
+                    <br>
+                    Board Exam Preparation
+                </p>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">📐</div>
+
+                <h3>I.Sc.</h3>
+
+                <p>
+                    Physics & Maths
+                    <br>
+                    Concept Clear Classes
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Batch Timing Section -->
+
+    <section class="batches" id="batches">
+
+        <div class="section-title">
+            <h2>Our Batch Timing</h2>
+            <div class="underline"></div>
+            <p>अपनी सुविधा के अनुसार बैच चुनें</p>
+        </div>
+
+        <div class="batch-grid">
+
+            <!-- Class 8 -->
+
+            <div class="batch-card">
+
+                <h3>Class 8th</h3>
+
+                <p>Regular Batch</p>
+
+                <div class="time">
+                    4:00 PM - 5:00 PM
+                </div>
+
+                <p>
+                    कक्षा 8वीं का बैच चल रहा है।
+                </p>
+
+            </div>
+
+            <!-- Class 9 -->
+
+            <div class="batch-card">
+
+                <h3>Class 9th</h3>
+
+                <p>Morning Batch</p>
+
+                <div class="time">
+                    8:00 AM - 9:00 AM
+                </div>
+
+                <p>Evening Batch</p>
+
+                <div class="time">
+                    3:30 PM - 4:30 PM
+                </div>
+
+                <div class="new-batch">
+                    New Batch
+                </div>
+
+            </div>
+
+            <!-- Class 10 -->
+
+            <div class="batch-card">
+
+                <h3>Class 10th</h3>
+
+                <p>Regular Batch</p>
+
+                <div class="time">
+                    6:30 PM - 8:30 PM
+                </div>
+
+                <p>
+                    Board Exam Preparation
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Crash Course -->
+
+    <section class="crash">
+
+        <h2>
+            Class 10th <span>Crash Course</span>
+        </h2>
+
+        <p>
+            कक्षा 10वीं के विद्यार्थियों के लिए
+            विशेष Crash Course की सुविधा।
+            समय पर Syllabus पूरा करने और
+            बेहतर तैयारी करने का अवसर।
+        </p>
+
+        <a href="#contact" class="btn btn-yellow">
+            Admission Enquiry
+        </a>
+
+    </section>
+
+    <!-- Features Section -->
+
+    <section class="features">
+
+        <div class="section-title">
+            <h2>हमारी विशेषताएँ</h2>
+            <div class="underline"></div>
+            <p>आपकी सफलता हमारी प्राथमिकता</p>
+        </div>
+
+        <div class="feature-grid">
+
+            <div class="feature">
+                <span class="feature-icon">✓</span>
+                <p>
+                    समय पर Syllabus समाप्त करने की गारंटी
+                </p>
+            </div>
+
+            <div class="feature">
+                <span class="feature-icon">✓</span>
+                <p>
+                    प्रत्येक Chapter की Package व्यवस्था
+                </p>
+            </div>
+
+            <div class="feature">
+                <span class="feature-icon">✓</span>
+                <p>
+                    प्रतिदिन Set Practice की व्यवस्था
+                </p>
+            </div>
+
+            <div class="feature">
+                <span class="feature-icon">✓</span>
+                <p>
+                    साप्ताहिक Test की सुविधा
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Director Section -->
+
+    <section class="director">
+
+        <div class="section-title">
+            <h2>Our Director</h2>
+            <div class="underline"></div>
+        </div>
+
+        <div class="director-card">
+
+            <div class="director-icon">
+                👨‍🏫
+            </div>
+
+            <h3>Prem Kumar</h3>
+
+            <p>
+                Director
+                <br>
+                Sure Success Coaching Centre
+            </p>
+
+            <a href="tel:8084769470"
+               class="btn btn-yellow">
+
+                Call Director
+
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section class="contact" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>
+            <strong>Sure Success Coaching Centre</strong>
+        </p>
+
+        <p>
+            📍 Baheliya Bigha, Addapar, Tekari
+        </p>
+
+        <p>
+            👨‍🏫 Director: Prem Kumar
+        </p>
+
+        <p>
+            📞 8084769470
+        </p>
+
+        <div class="buttons">
+
+            <a href="tel:8084769470"
+               class="btn btn-yellow">
+
+                Call Now
+
+            </a>
+
+            <a href="https://wa.me/918084769470"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-white">
+
+                WhatsApp Us
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © <span id="year"></span>
+            <strong>Sure Success Coaching Centre</strong>
+        </p>
+
+        <p>
+            Concept Clear तो Result Clear
+        </p>
+
+        <p>
+            Baheliya Bigha, Addapar, Tekari
+        </p>
+
+    </footer>
+
+    <script>
+
+        // Automatically update the current year
+
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+    </script>
+
+</body>
+</html>
