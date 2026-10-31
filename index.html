@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sure Success Coaching Centre, Baheliya Bigha, Addapar, Tekari. Classes 8th to 10th all subjects and I.Sc Physics & Mathematics.">
+  <meta name="theme-color" content="#8f171b">
+  <title>Sure Success Coaching Centre | Tekari</title>
+  <style>
+    :root{--red:#941b20;--red2:#c83c42;--gold:#f2cf70;--cream:#fff9e9;--ink:#2d2020;--muted:#6c5b55;--white:#fff}
+    *{box-sizing:border-box;scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;color:var(--ink);background:#fffdf7;line-height:1.6}
+    a{color:inherit}
+    .topbar{background:#681216;color:#fff;text-align:center;padding:8px 14px;font-size:.9rem}
+    header{background:linear-gradient(125deg,#fff4d2,#fffdf5);border-bottom:1px solid #f0dfb6}
+    .nav{max-width:1120px;margin:auto;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+    .logo{width:54px;height:54px;border-radius:15px;background:var(--red);color:white;display:grid;place-items:center;font-weight:900;font-size:1.2rem;box-shadow:0 5px 15px #941b2033}
+    .brand strong{display:block;color:var(--red);font-size:1.15rem;line-height:1.2}
+    .brand small{color:var(--muted)}
+    nav{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+    nav a{text-decoration:none;font-weight:700;font-size:.92rem}
+    nav a:hover{color:var(--red2)}
+    .btn{display:inline-block;text-decoration:none;border:0;border-radius:10px;padding:12px 18px;font-weight:800;background:var(--red);color:#fff;cursor:pointer;box-shadow:0 5px 12px #941b2020}
+    .btn:hover{background:#6f1116}
+    .btn.alt{background:var(--gold);color:#4b2818}
+    .hero{background:radial-gradient(circle at 85% 20%,#f6d98d 0,transparent 30%),linear-gradient(135deg,#fff5d9,#fffdf7 65%);padding:66px 22px 58px}
+    .hero-inner{max-width:1120px;margin:auto;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:42px}
+    .eyebrow{display:inline-block;background:#f8e6b6;color:#772024;padding:7px 12px;border-radius:99px;font-size:.84rem;font-weight:800}
+    h1{font-size:clamp(2.4rem,5vw,4.3rem);line-height:1.04;letter-spacing:-1.5px;margin:18px 0;color:var(--red)}
+    h1 span{display:block;color:#332322}
+    .hero p{font-size:1.1rem;max-width:620px;color:#594745}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+    .hero-card{background:#fff;border:1px solid #f1dfb9;border-radius:24px;padding:26px;box-shadow:0 20px 50px #5c2b1710}
+    .hero-card h2{margin:0 0 12px;color:var(--red);font-size:1.35rem}
+    .promise{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid #f3ead8}
+    .promise:last-child{border-bottom:0}
+    .check{background:#f8e9c4;color:#8b1d21;width:30px;height:30px;flex:0 0 30px;border-radius:50%;display:grid;place-items:center;font-weight:900}
+    section{padding:64px 22px}
+    .wrap{max-width:1120px;margin:auto}
+    .section-head{text-align:center;max-width:700px;margin:0 auto 34px}
+    .section-head .tag{color:var(--red);font-weight:900;text-transform:uppercase;letter-spacing:1px;font-size:.8rem}
+    h2{font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.2;margin:8px 0 12px}
+    .section-head p{color:var(--muted);margin:0}
+    .courses{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .course{padding:25px;border-radius:18px;background:#fff;border:1px solid #eee0c6;box-shadow:0 8px 25px #40210d08}
+    .course .number{width:44px;height:44px;border-radius:12px;background:#fae9bc;color:var(--red);display:grid;place-items:center;font-weight:900;font-size:1.1rem}
+    .course h3{margin:16px 0 8px;color:var(--red);font-size:1.25rem}
+    .course p{color:var(--muted);margin:0}
+    .course ul{padding-left:20px;margin:12px 0 0}
+    .timetable{background:#fff4d6}
+    .table-wrap{overflow-x:auto;border-radius:16px;box-shadow:0 10px 25px #40210d0b}
+    table{border-collapse:collapse;width:100%;min-width:580px;background:white}
+    th{background:var(--red);color:#fff;text-align:left;padding:16px}
+    td{padding:16px;border-bottom:1px solid #f0e5d1}
+    tr:last-child td{border-bottom:0}
+    .pill{display:inline-block;background:#f8e8be;color:#742025;border-radius:99px;padding:4px 10px;font-size:.84rem;font-weight:800}
+    .features{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .feature{border:1px solid #f0e3cb;border-radius:16px;padding:22px;background:#fff}
+    .feature .emoji{font-size:1.8rem}
+    .feature h3{font-size:1.05rem;margin:12px 0 6px}
+    .feature p{color:var(--muted);font-size:.94rem;margin:0}
+    .contact{background:#2b2020;color:white}
+    .contact .section-head p{color:#e5d6c9}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    .contact-card{padding:25px;border-radius:18px;background:#3a2b2a;border:1px solid #5b4541}
+    .contact-card h3{margin-top:0;color:#f7d98e}
+    .contact-card p{color:#f1e5dc}
+    .contact-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+    .contact .btn.alt{background:var(--gold);color:#3b2521}
+    footer{background:#1c1515;color:#d8c9bf;text-align:center;padding:20px;font-size:.9rem}
+    .float-call{position:fixed;right:16px;bottom:16px;z-index:4;background:var(--red);color:#fff;text-decoration:none;padding:13px 17px;border-radius:999px;box-shadow:0 8px 25px #0003;font-weight:800}
+    @media(max-width:800px){.hero-inner{grid-template-columns:1fr}.courses{grid-template-columns:1fr 1fr}.features{grid-template-columns:1fr 1fr}.nav{align-items:flex-start;flex-direction:column}nav{gap:13px}}
+    @media(max-width:520px){.hero{padding-top:44px}.courses,.features,.contact-grid{grid-template-columns:1fr}section{padding:48px 17px}.nav{padding:15px 17px}.brand strong{font-size:1rem}.hero-card{padding:21px}}
+  </style>
+</head>
+<body>
+  <div class="topbar">Concept Clear तो Result Clear • ESTD 2012</div>
+  <header>
+    <div class="nav">
+      <a class="brand" href="#home" aria-label="Sure Success home">
+        <div class="logo">SS</div>
+        <div><strong>SURE SUCCESS</strong><small>COACHING CENTRE</small></div>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#courses">Courses</a><a href="#timings">Batch Timings</a><a href="#features">Our Features</a><a href="#contact">Contact</a>
+      </nav>
+      <a class="btn" href="tel:+918084769470">Call for Admission</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div>
+          <span class="eyebrow">भिड़ नहीं • भविष्य बदलें</span>
+          <h1>SURE SUCCESS <span>COACHING CENTRE</span></h1>
+          <p>मजबूत concepts, नियमित practice और chapter-wise तैयारी के साथ अपनी पढ़ाई को बेहतर बनाइए। कक्षा 8वीं से 10वीं तक सभी विषय तथा I.Sc. के Physics और Mathematics की पढ़ाई।</p>
+          <div class="hero-actions">
+            <a class="btn" href="tel:+918084769470">📞 8084769470 पर कॉल करें</a>
+            <a class="btn alt" href="#courses">Courses देखें</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h2>आपकी सफलता, हमारा लक्ष्य</h2>
+          <div class="promise"><span class="check">✓</span><div><strong>Concept Clear</strong><br><small>बुनियादी समझ पर विशेष ध्यान</small></div></div>
+          <div class="promise"><span class="check">✓</span><div><strong>Chapter-wise Package</strong><br><small>हर अध्याय की व्यवस्थित तैयारी</small></div></div>
+          <div class="promise"><span class="check">✓</span><div><strong>Set Practice & Tests</strong><br><small>नियमित अभ्यास और साप्ताहिक टेस्ट</small></div></div>
+          <div class="promise"><span class="check">✓</span><div><strong>समय पर Syllabus</strong><br><small>पाठ्यक्रम पूरा करने की योजना</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="courses">
+      <div class="wrap">
+        <div class="section-head"><span class="tag">Our Courses</span><h2>किस कक्षा के लिए पढ़ाई उपलब्ध है?</h2><p>अपनी कक्षा और विषय के अनुसार बैच की जानकारी फोन पर प्राप्त करें।</p></div>
+        <div class="courses">
+          <article class="course"><div class="number">08</div><h3>Class VIII</h3><p>कक्षा 8वीं के विद्यार्थियों के लिए सभी विषय।</p><ul><li>Concept-based learning</li><li>Regular practice</li><li>Batch: 4:00–5:00 PM</li></ul></article>
+          <article class="course"><div class="number">09</div><h3>Class IX</h3><p>कक्षा 9वीं के विद्यार्थियों के लिए सभी विषय।</p><ul><li>Chapter-wise preparation</li><li>नया बैच उपलब्ध होने की जानकारी कॉल पर लें</li><li>पोस्टर में दिए गए समय नीचे देखें</li></ul></article>
+          <article class="course"><div class="number">10</div><h3>Class X</h3><p>कक्षा 10वीं के विद्यार्थियों के लिए सभी विषय।</p><ul><li>Board exam preparation</li><li>Set practice & weekly tests</li><li>Batch: 6:30–8:30 PM</li></ul></article>
+          <article class="course"><div class="number">I.Sc.</div><h3>Intermediate Science</h3><p>I.Sc. विद्यार्थियों के लिए विषय-विशेष पढ़ाई।</p><ul><li>Physics</li><li>Mathematics</li><li>समय और बैच के लिए संपर्क करें</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="timetable" id="timings">
+      <div class="wrap">
+        <div class="section-head"><span class="tag">Class Schedule</span><h2>Batch Timings</h2><p>ये समय उपलब्ध कराए गए पोस्टर से लिए गए हैं। वर्तमान बैच और सीट की पुष्टि फोन पर करें।</p></div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Class</th><th>Timing</th><th>Note</th></tr></thead>
+            <tbody>
+              <tr><td><strong>8th</strong></td><td>4:00 PM – 5:00 PM</td><td><span class="pill">Batch</span></td></tr>
+              <tr><td><strong>9th</strong></td><td>8:00 AM – 9:00 AM</td><td><span class="pill">Batch</span></td></tr>
+              <tr><td><strong>9th</strong></td><td>3:30 PM – 4:30 PM</td><td><span class="pill">New batch mentioned</span></td></tr>
+              <tr><td><strong>10th</strong></td><td>6:30 PM – 8:30 PM</td><td><span class="pill">Batch</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="wrap">
+        <div class="section-head"><span class="tag">Why Sure Success?</span><h2>हमारी विशेषताएँ</h2><p>पढ़ाई को व्यवस्थित और नियमित बनाने पर जोर।</p></div>
+        <div class="features">
+          <div class="feature"><div class="emoji">📚</div><h3>Chapter Packages</h3><p>प्रत्येक अध्याय की तैयारी के लिए व्यवस्थित सामग्री।</p></div>
+          <div class="feature"><div class="emoji">📝</div><h3>Daily Set Practice</h3><p>नियमित प्रश्न-अभ्यास से तैयारी मजबूत करें।</p></div>
+          <div class="feature"><div class="emoji">📊</div><h3>Weekly Tests</h3><p>साप्ताहिक टेस्ट से अपनी प्रगति जाँचें।</p></div>
+          <div class="feature"><div class="emoji">⏰</div><h3>Syllabus Planning</h3><p>समय के अनुसार पाठ्यक्रम पूरा करने की योजना।</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <div class="section-head"><span class="tag">Get in Touch</span><h2>Admission और जानकारी के लिए संपर्क करें</h2><p>बैच टाइमिंग, फीस, उपलब्ध सीट और प्रवेश की जानकारी सीधे सेंटर से प्राप्त करें।</p></div>
+        <div class="contact-grid">
+          <div class="contact-card"><h3>📍 Coaching Centre</h3><p><strong>Sure Success Coaching Centre</strong><br>Baheliya Bigha, Addapar, Tekari<br>Bihar, India</p><p><strong>Director:</strong> Prem Kumar</p></div>
+          <div class="contact-card"><h3>📞 Call Us</h3><p>मोबाइल: <strong>8084769470</strong></p><p>कॉल करके वर्तमान बैच और admission की पुष्टि करें।</p><div class="contact-actions"><a class="btn alt" href="tel:+918084769470">Call Now</a><a class="btn" href="https://wa.me/918084769470?text=Namaste%2C%20mujhe%20Sure%20Success%20Coaching%20Centre%20me%20admission%20ki%20jankari%20chahiye." target="_blank" rel="noopener">WhatsApp</a></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>© <span id="year"></span> Sure Success Coaching Centre • Baheliya Bigha, Addapar, Tekari<br>Concept Clear तो Result Clear</footer>
+  <a class="float-call" href="tel:+918084769470">☎ Call Now</a>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
